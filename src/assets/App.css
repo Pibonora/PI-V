@@ -1,0 +1,17 @@
+/* App.css or similar */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o container principal ocupe pelo menos a altura da tela */
+}
+
+.main-content {
+  flex: 1; /* Permite que o conteúdo principal expanda para ocupar o espaço restante */
+}

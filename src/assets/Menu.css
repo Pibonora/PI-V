@@ -1,0 +1,60 @@
+/* Menu.css */
+
+.menu-bar {
+    background-color: #4caf50; /* Cor verde para o AppBar */
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 7rem; /* Ajuste a altura do logo conforme necessário */
+    margin-left: 1rem;
+  }
+  
+  .menu-items {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* Alinha os botões à direita */
+  }
+  
+  .menu-items .nav-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu-items .nav-link:hover {
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /* Estilos para o menu sanduíche */
+  .menu-button {
+    display: none; /* Esconde o menu sanduíche por padrão */
+  }
+  
+  @media (max-width: 768px) {
+    .menu-items {
+      display: none; /* Oculta os itens do menu em telas pequenas */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Ajuste a posição conforme necessário */
+      right: 0;
+      background-color: #4caf50;
+      width: 100%;
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .menu-items.open {
+      display: flex; /* Exibe o menu quando está aberto */
+    }
+  
+    .menu-button {
+      display: block; /* Exibe o menu sanduíche em telas pequenas */
+    }
+  }
+  
