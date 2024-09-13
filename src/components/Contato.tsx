@@ -38,7 +38,7 @@ const Contato: React.FC = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contato">
       <div className="contact-info">
         <h2>Contato</h2>
         <p>

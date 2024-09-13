@@ -1,0 +1,40 @@
+/* Define o estilo para a div pai */
+.section-container {
+    background-color:#4caf50 ;
+    display: flex;
+    flex-direction: row; /* Exibe as divs uma embaixo da outra */
+    gap: 20px; /* Espaçamento entre as divs */
+    color: #FFF;
+
+}
+
+/* Define o estilo para cada div de estatística */
+.statistic-item {
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: row; /* Exibe as informações uma embaixo da outra */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Define o estilo para o título */
+.statistic-item h3 {
+    margin: 5px 0; /* Espaçamento acima e abaixo do título */
+    font-size: 26px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define o estilo para a descrição */
+.statistic-item p {
+    margin: 0; /* Remove margem */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+.icon-container {
+    font-size: 7rem; /* Tamanho do ícone */
+    color: #FFF; /* Cor do ícone */
+    margin-bottom: 10px; /* Espaço abaixo do ícone */
+    text-align: center;
+}

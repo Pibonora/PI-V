@@ -12,6 +12,10 @@ body {
   min-height: 100vh; /* Garante que o container principal ocupe pelo menos a altura da tela */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-content {
   flex: 1; /* Permite que o conteúdo principal expanda para ocupar o espaço restante */
 }

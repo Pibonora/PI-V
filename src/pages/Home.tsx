@@ -1,6 +1,8 @@
 // Home.tsx
 import React from 'react';
 import '../assets/Home.css'; // Importa o CSS para estilização
+import Estatistica from '../components/Statistics';
+import { MdFamilyRestroom } from "react-icons/md";
 
 const Home: React.FC = () => {
   return (

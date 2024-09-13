@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 
 // Importe a imagem para garantir o caminho correto
 import img1 from './assets/img1.png';
+import SectionS from './components/Section-Statistics';
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         imageSrc={img1} // Use a variável importada
         imageAlt="Descrição da imagem"
       />
+      <SectionS/>
       <Contato/>
       <Footer />
     </Router>
