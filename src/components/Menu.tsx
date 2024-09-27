@@ -1,9 +1,10 @@
 // Menu.tsx
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
+import { AppBar, Toolbar, Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../assets/logo.png'; // Caminho para a imagem de logo
 import '../assets/Menu.css'; // Importa o CSS para estilização
+import { Link } from 'react-router-dom';
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -18,7 +19,8 @@ const Menu: React.FC = () => {
         <img src={logo} alt="Logo" className="logo" />
         <div className={`menu-items ${isOpen ? 'open' : ''}`}>
           <Button color="inherit" className="nav-button">
-            <a href="#inicio" className="nav-link">Início</a>
+            <a href="/" className="nav-link">Início</a>
+
           </Button>
           <Button color="inherit" className="nav-button">
             <a href="#servicos" className="nav-link">Serviços</a>

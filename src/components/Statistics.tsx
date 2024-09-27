@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdFamilyRestroom } from "react-icons/md";
+// import { MdFamilyRestroom } from "react-icons/md";
 
 interface EstatisticaProps {
     icon: React.ReactNode; // Tipo genérico para o ícone
