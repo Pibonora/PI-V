@@ -1,0 +1,45 @@
+.container{
+    font-size: 15px;
+    /* text-align: center; */
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+h2{
+    font-size: 2rem;
+    border-bottom: #C92C4E solid;
+    padding-bottom: 3px;
+}
+.c1{
+    text-align: center;
+}
+.container div{
+    margin: 1rem;
+}
+
+.relatorio{
+    display: flex;
+}
+
+span{
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.contas a{
+    display: block;
+    font-size: 18px;
+    color: #C92C4E;
+    margin-top: 8px;
+}
+.contas a:hover{
+    color: #8ABF5F;
+
+
+}
+
+.contas h2{
+    text-align: center;
+}

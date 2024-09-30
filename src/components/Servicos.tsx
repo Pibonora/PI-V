@@ -2,6 +2,7 @@
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import '../assets/servicos.css'
 
 // Estilizando a imagem para que ela fique alinhada à direita e tenha uma largura máxima
 const StyledImage = styled('img')({
@@ -25,7 +26,7 @@ const Servicos: React.FC<ServicosProps> = ({ title, text, imageSrc, imageAlt }) 
       <Box sx={{ display: 'flex', alignItems: 'center', marginY: '2rem' }}>
         {/* Container para o texto */}
         <Box sx={{ flex: 1 }}>
-          <Typography variant="h3" sx={{ color: '#4caf50', marginBottom: '1rem' }}>
+          <Typography variant="h2" sx={{ color: '#4caf50', marginBottom: '1rem' }}>
             {title}
           </Typography>
           <Typography variant="body1">

@@ -2,7 +2,7 @@
 
 /* Estilo básico do footer */
 .footer {
-    background-color: #4caf50; /* Cor verde para o fundo */
+    background-color: #C92C4E; /* Cor verde para o fundo */
     color: white; /* Cor do texto para contraste */
     padding: 2rem; /* Espaço interno */
     box-sizing: border-box; /* Inclui o padding e a borda na largura e altura do elemento */
@@ -43,11 +43,25 @@
     margin-bottom: 0.5rem; /* Espaço entre os links */
     color: white; /* Cor dos links */
     text-decoration: none; /* Remove o sublinhado dos links */
+    position: relative; /* Necessário para o pseudo-elemento */
 }
 
-.footer-link:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
+.footer-link::after {
+    content: ""; /* Necessário para mostrar o pseudo-elemento */
+    position: absolute;
+    left: 0; /* Inicia na esquerda */
+    bottom: 0; /* Posiciona na parte inferior do link */
+    width: 100%; /* A largura total do link */
+    height: 2px; /* A altura da borda */
+    background-color: #8ABF5F; /* Cor da borda */
+    transform: scaleX(0); /* Inicia com escala 0 (invisível) */
+    transition: transform 0.2s ease; /* Transição suave */
 }
+
+.footer-link:hover::after {
+    transform: scaleX(1); /* Escala para 1 ao passar o mouse */
+}
+
 
 /* Estilo para os parágrafos */
 .footer-section p {

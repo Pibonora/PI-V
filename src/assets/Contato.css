@@ -13,7 +13,7 @@
   }
   
   .contact-info h2 {
-    color: #4caf50; /* Cor verde para o título */
+    color: #4caf50; /* Cor verde para o título / Outro verde #4caf50/*/
     margin-bottom: 1rem;
     text-align: left;
   }
@@ -34,7 +34,8 @@
     background-color: #f9f9f9;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px #C92C4E;
   }
   
   .contact-form h2 {

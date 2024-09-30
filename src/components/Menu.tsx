@@ -4,7 +4,6 @@ import { AppBar, Toolbar, Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../assets/logo.png'; // Caminho para a imagem de logo
 import '../assets/Menu.css'; // Importa o CSS para estilização
-import { Link } from 'react-router-dom';
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -14,7 +13,7 @@ const Menu: React.FC = () => {
   };
 
   return (
-    <AppBar position="static" className="menu-bar" style={{ backgroundColor: '#4caf50' }}>
+    <AppBar position="static" className="menu-bar" style={{ backgroundColor: '#C92C4E' }}>
       <Toolbar className="toolbar">
         <img src={logo} alt="Logo" className="logo" />
         <div className={`menu-items ${isOpen ? 'open' : ''}`}>

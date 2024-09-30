@@ -14,9 +14,7 @@ const Home: React.FC = () => {
       <div className="background-image">
         <div className="text-overlay">
           <h1>Seu apoio conta: colabore conosco.</h1>
-          <p>
-            Este é um exemplo de como você pode usar uma imagem de fundo e centralizar o texto sobre ela.
-          </p>
+         
         </div>
       </div>
     </div>
