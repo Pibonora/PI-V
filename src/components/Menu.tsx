@@ -4,12 +4,24 @@ import { AppBar, Toolbar, Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../assets/logo.png'; // Caminho para a imagem de logo
 import '../assets/Menu.css'; // Importa o CSS para estilização
+import { Link, useNavigate } from 'react-router-dom';
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const navigate = useNavigate(); // Usando useNavigate
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const navigateToHomeWithScroll = (id: string) => {
+    navigate('/'); // Navega para a Home
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Espera um pouco para garantir que a navegação foi concluída
   };
 
   return (
@@ -18,20 +30,19 @@ const Menu: React.FC = () => {
         <img src={logo} alt="Logo" className="logo" />
         <div className={`menu-items ${isOpen ? 'open' : ''}`}>
           <Button color="inherit" className="nav-button">
-            <a href="/" className="nav-link">Início</a>
-
+            <Link to="/" className="nav-link">Início</Link>
+          </Button>
+          <Button color="inherit" className="nav-button" onClick={() => navigateToHomeWithScroll('servicos')}>
+            Serviços
+          </Button>
+          <Button color="inherit" className="nav-button" onClick={() => navigateToHomeWithScroll('contato')}>
+            Contato
           </Button>
           <Button color="inherit" className="nav-button">
-            <a href="#servicos" className="nav-link">Serviços</a>
+            <Link to="/transparencia" className="nav-link">Transparência</Link>
           </Button>
           <Button color="inherit" className="nav-button">
-            <a href="#contato" className="nav-link">Contato</a>
-          </Button>
-          <Button color="inherit" className="nav-button">
-            <a href="/transparencia" className="nav-link">Transparência</a>
-          </Button>
-          <Button color="inherit" className="nav-button">
-            <a href="/entrar" className="nav-link">Entrar</a>
+            <Link to="/entrar" className="nav-link">Entrar</Link>
           </Button>
         </div>
         <IconButton

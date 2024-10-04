@@ -5,6 +5,7 @@
     flex-direction: row; /* Exibe as divs uma embaixo da outra */
     gap: 20px; /* Espaçamento entre as divs */
     color: #FFF;
+    margin: 4rem 0;
 
 }
 

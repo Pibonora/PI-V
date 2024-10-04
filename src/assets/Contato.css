@@ -5,11 +5,13 @@
     justify-content: space-between;
     padding: 2rem;
     gap: 2rem;
+
   }
   
   .contact-info {
     flex: 1;
     max-width: 50%;
+    margin-top: 2rem;
   }
   
   .contact-info h2 {

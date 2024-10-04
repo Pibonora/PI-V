@@ -18,11 +18,19 @@ const Home: React.FC = () => {
         </div>
       </div>
     </div>
-    <Servicos
+    <section id='servicos'>
+    <Servicos 
         title="Nossos Serviços"
         text="Aqui está um resumo dos nossos principais serviços. Oferecemos uma ampla gama de soluções adaptadas às suas necessidades. Desde consultoria até implementação, nossa equipe está aqui para ajudar você a alcançar seus objetivos com eficiência e excelência."
         imageSrc={img1} // Use a variável importada
-        imageAlt="Descrição da imagem" /><SectionS /><Contato /></>
+        imageAlt="Descrição da imagem" />
+        </section>
+        <SectionS />
+        <section id='contato'>
+
+        
+        <Contato /></section></>
+        
   );
 };
 
