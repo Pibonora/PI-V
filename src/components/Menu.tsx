@@ -32,10 +32,10 @@ const Menu: React.FC = () => {
           <Button color="inherit" className="nav-button">
             <Link to="/" className="nav-link">Início</Link>
           </Button>
-          <Button color="inherit" className="nav-button" onClick={() => navigateToHomeWithScroll('servicos')}>
+          <Button color="inherit" className="nav-button nav-link" onClick={() => navigateToHomeWithScroll('servicos')}>
             Serviços
           </Button>
-          <Button color="inherit" className="nav-button" onClick={() => navigateToHomeWithScroll('contato')}>
+          <Button color="inherit" className="nav-button nav-link" onClick={() => navigateToHomeWithScroll('contato')}>
             Contato
           </Button>
           <Button color="inherit" className="nav-button">

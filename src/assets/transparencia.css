@@ -11,7 +11,7 @@ h2{
     border-bottom: #C92C4E solid;
     padding-bottom: 3px;
 }
-.c1{
+.c1 p{
     text-align: center;
 }
 .container div{
@@ -38,8 +38,4 @@ span{
     color: #8ABF5F;
 
 
-}
-
-.contas h2{
-    text-align: center;
 }
