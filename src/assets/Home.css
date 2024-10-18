@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/ONGS.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('../assets/coracao.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
@@ -28,7 +28,7 @@
     text-align: center; /* Centraliza o texto */
     color: white; /* Cor do texto */
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
-    padding: 2rem; /* Espaço interno ao redor do texto */
+    padding: 1rem; /* Espaço interno ao redor do texto */
     border-radius: 8px; /* Bordas arredondadas para o fundo do texto */
   }
   

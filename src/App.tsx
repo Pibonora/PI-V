@@ -1,5 +1,4 @@
-// App.tsx
-import React from 'react';
+// App.tsx import React from 'react';
 import './assets/App.css'; // Caminho correto para o CSS
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Menu from './components/Menu';
@@ -9,8 +8,11 @@ import Login from './pages/Login'; // Corrigido para Login
 import Cadastrar from './pages/Cadastrar'; // Mantém a importação correta
 import Footer from './components/Footer';
 
+
+
 const App: React.FC = () => {
   return (
+    
     <Router>
       <Menu />
       <Routes>
@@ -23,5 +25,6 @@ const App: React.FC = () => {
     </Router>
   );
 };
+
 
 export default App;

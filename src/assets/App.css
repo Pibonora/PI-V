@@ -19,3 +19,8 @@ html {
 .main-content {
   flex: 1; /* Permite que o conteúdo principal expanda para ocupar o espaço restante */
 }
+
+#vlibras {
+  display: block !important; /* Garante que o botão seja exibido */
+  z-index: 1000; /* Para que fique acima de outros elementos */
+}

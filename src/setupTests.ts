@@ -3,3 +3,11 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+// next.config.js
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    reactStrictMode: false,
+  };
+  
+  module.exports = nextConfig;
