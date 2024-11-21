@@ -7,10 +7,10 @@ import '../assets/Cadastro.css'; // Verifique se o caminho está correto
 const Cadastrar: React.FC = () => {
   return (
     <section className='entrar-container'>
-      <h2>Cadastrar</h2>
+      <h2>Cadastrar voluntário</h2>
       <form>
         <div>
-          <label>Nome:</label>
+          <label>Nome do voluntário:</label>
           <input type="text" name='name' required />
         </div>
         <div>
@@ -18,11 +18,7 @@ const Cadastrar: React.FC = () => {
           <input type="email" name='email' required />
         </div>
         <div>
-          <label>Senha:</label>
-          <input type="password" name='password' required />
-        </div>
-        <div>
-          <label>Confirme a Senha:</label>
+          <label>Telefone:</label>
           <input type="password" name='password' required />
         </div>
         <button type="submit">Cadastrar</button>

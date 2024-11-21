@@ -42,7 +42,7 @@ const Menu: React.FC = () => {
             <Link to="/transparencia" className="nav-link">Transparência</Link>
           </Button>
           <Button color="inherit" className="nav-button">
-            <Link to="/entrar" className="nav-link">Entrar</Link>
+            <Link to="/cadastrar" className="nav-link">cadastrar</Link>
           </Button>
         </div>
         <IconButton

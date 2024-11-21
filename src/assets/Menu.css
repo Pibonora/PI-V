@@ -1,7 +1,7 @@
 /* Menu.css */
 
 .menu-bar {
-    background-color: #8ABF5F; /* Cor verde para o AppBar */
+    background-color: #C92C4E; /* Cor verde para o AppBar */
 
   }
   
@@ -36,7 +36,7 @@
     bottom: 0; /* Posiciona na parte inferior do link */
     width: 100%; /* A largura total do link */
     height: 2px; /* A altura da borda */
-    background-color: #8ABF5F; /* Cor da borda */
+    background-color: #C92C4E; /* Cor da borda */
     transform: scaleX(0); /* Inicia com escala 0 (invisível) */
     transition: transform 0.2s ease; /* Transição suave */
     
@@ -59,7 +59,7 @@
       position: absolute;
       top: 60px; /* Ajuste a posição conforme necessário */
       right: 0;
-      background-color: #4caf50;
+      background-color: #C92C4E;
       width: 100%;
       padding: 1rem;
       gap: 1rem;
