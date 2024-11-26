@@ -15,14 +15,14 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h3>Mapa do Site</h3>
           <a href="/" className="footer-link">Início</a>
-          <a href="#servicos" className="footer-link">Serviços</a>
-          <a href="#contato" className="footer-link">Contato</a>
+          <a href="/" className="footer-link">Serviços</a>
+          <a href="/" className="footer-link">Contato</a>
           <a href="/transparencia" className="footer-link">Transparência</a>
           <a href="/cadastrar" className="footer-link">Cadastrar</a>
         </div>
         <div className="footer-section">
           <h3>Contatos</h3>
-          <p>projetosopataqua@hotmail.com</p>
+          <p>pONGs@hotmail.com</p>
           <p>(16) 98200-7319</p>
           <div className="footer-quote">
             "E não se esqueçam de fazer o bem e de repartir com os outros, pois com tais sacrifícios Deus se agrada."

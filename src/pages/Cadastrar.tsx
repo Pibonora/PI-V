@@ -15,6 +15,16 @@ const Cadastrar: React.FC = () => {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = e.target.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+    const formattedValue = inputValue
+      .replace(/^(\d{2})(\d)/, '($1) $2') // Adiciona o DDD entre parênteses
+      .replace(/(\d{5})(\d)/, '$1-$2') // Adiciona o traço no número principal
+      .slice(0, 15); // Limita o tamanho máximo do telefone formatado
+    setFormData({ ...formData, phone: formattedValue });
+  };
+  
+  
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -86,16 +96,17 @@ const Cadastrar: React.FC = () => {
           />
         </div>
         <div>
-          <label>Telefone:</label>
-          <input
-            type="text"
-            name="phone"
-            placeholder="Digite o telefone"
-            value={formData.phone}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
+  <label>Telefone:</label>
+  <input
+    type="text"
+    name="phone"
+    placeholder="Digite o telefone"
+    value={formData.phone}
+    onChange={handlePhoneChange} // Substituído pela função de máscara
+    required
+  />
+</div>
+
         <div>
           <label>Senha:</label>
           <input

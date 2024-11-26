@@ -16,7 +16,6 @@ const Home: React.FC = () => {
       <div className="background-image">
         <div className="text-overlay">
           <h1>Uma pequena doação, um grande impacto.</h1>
-         
         </div>
       </div>
     </div>

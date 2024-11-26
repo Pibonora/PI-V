@@ -1,42 +1,120 @@
-.container{
+.container {
     font-size: 15px;
-    /* text-align: center; */
     width: 60rem;
     margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-h2{
+
+h2 {
     font-size: 2rem;
     border-bottom: #C92C4E solid;
     padding-bottom: 3px;
     color: #4caf50;
 }
-.c1 p{
+
+.c1 p {
     text-align: center;
 }
-.container div{
+
+.container div {
     margin: 1rem;
 }
 
-.relatorio{
+.relatorio {
     display: flex;
+    flex-wrap: wrap; /* Adiciona a quebra de linha para flexbox */
+    gap: 1rem; /* Adiciona espaçamento entre os itens */
 }
 
-span{
+span {
     font-weight: bold;
     font-size: 18px;
     margin-right: 8px;
 }
 
-.contas a{
+.contas a {
     display: block;
     font-size: 18px;
     color: #C92C4E;
     margin-top: 8px;
 }
-.contas a:hover{
+
+.contas a:hover {
     color: #8ABF5F;
+}
 
+/* Responsividade */
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
 
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .relatorio {
+        flex-direction: column; /* Empilha os itens para telas menores */
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+    .contas a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .relatorio {
+        flex-direction: column;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    .contas a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .relatorio {
+        flex-direction: column;
+        gap: 0.5rem; /* Menor espaçamento em telas muito pequenas */
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .contas a {
+        font-size: 12px;
+    }
 }
